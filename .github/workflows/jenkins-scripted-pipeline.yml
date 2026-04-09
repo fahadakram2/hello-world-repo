@@ -12,12 +12,12 @@ jobs:
         steps:
             - run:  echo 'Hello, World!'
 
-    Build: 
+    Build:
         runs-on: ubuntu-latest
-        steps: 
+        steps:
             - run: |
-                - echo 'Pretending to build...'
-                  sleep 5
+                echo 'Pretending to build...' 
+                sleep 5
 
     Results:
         runs-on: ubuntu-latest
