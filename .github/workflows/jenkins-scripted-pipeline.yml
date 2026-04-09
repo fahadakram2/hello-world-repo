@@ -1,6 +1,7 @@
 name: Scripted Pipeline
 
 on:
+    workflow_dispatch:
     push:
         branches:
             - feature-testing
@@ -16,7 +17,7 @@ jobs:
         steps: 
             - run: |
                 - echo 'Pretending to build...'
-                  sleep 5s
+                  sleep 5
 
     Results:
         runs-on: ubuntu-latest
